@@ -1,0 +1,16 @@
+,Year,Engine_Size,Mileage,Make,Type,Origin,Color,Options,Fuel_Type,Gear_Type,Region,Actual,Predicted,AbsError,PctError
+2722,1990,6.7,5000.0,Rolls-Royce,Camargue,Saudi,Another Color,Full,Gas,Automatic,Dammam,500000,46877.0,453123.0,90.6246
+339,2020,5.7,455000.0,Lexus,LX,Gulf Arabic,White,Full,Gas,Automatic,Riyadh,455000,139025.0,315975.0,69.44505494505493
+787,2018,,26000.0,Bentley,Bentayga,Saudi,White,Full,Gas,Automatic,Riyadh,750000,463902.0,286098.0,38.1464
+254,2018,1.0,105000.0,Lexus,LX,Saudi,White,Full,Gas,Automatic,Riyadh,355000,160576.0,194424.0,54.76732394366197
+308,2010,6.0,175000.0,Rolls-Royce,Ghost,Saudi,Blue,Full,Gas,Automatic,Dammam,310000,117110.0,192890.0,62.22258064516129
+4713,2021,3.0,100.0,Land Rover,Defender,Saudi,Black,Full,Gas,Automatic,Jeddah,450000,264951.0,185049.0,41.122
+3429,2020,3.0,2300.0,BMW,X,Gulf Arabic,Oily,Full,Gas,Automatic,Dammam,465000,293319.0,171681.0,36.920645161290324
+2439,2020,3.0,17000.0,Land Rover,Range Rover,Saudi,Black,Standard,Gas,Automatic,Riyadh,428000,263566.0,164434.0,38.419158878504675
+2559,2019,3.5,13339.0,Ford,F150,Saudi,Blue,Semi Full,Gas,Automatic,Riyadh,291500,132110.0,159390.0,54.679245283018865
+798,2020,,3710.0,Mercedes,A,Other,Black,Standard,Gas,Automatic,Riyadh,173000,326936.0,153936.0,88.98034682080926
+1860,2017,,150000.0,Land Rover,Range Rover,Saudi,Grey,Full,Gas,Automatic,Riyadh,115000,240395.0,125395.0,109.03913043478262
+3492,2020,3.0,46000.0,Mercedes,S,Gulf Arabic,Black,Full,Gas,Automatic,Dammam,365000,489332.0,124332.0,34.06356164383561
+1807,2017,4.0,113000.0,Mercedes,G,Saudi,White,Full,Gas,Automatic,Dammam,330000,225401.0,104599.0,31.69666666666667
+800,2020,,10100.0,Mercedes,A,Other,White,Standard,Gas,Automatic,Riyadh,182000,286109.0,104109.0,57.20274725274726
+23,2014,3.0,80000.0,Land Rover,Range Rover,Saudi,Black,Full,Gas,Automatic,Makkah,230000,126943.0,103057.0,44.807391304347824

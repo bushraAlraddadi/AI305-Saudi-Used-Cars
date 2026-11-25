@@ -1,0 +1,10 @@
+Best model: Random Forest
+
+              precision    recall  f1-score   support
+
+   Automatic      0.966     0.967     0.966      1401
+      Manual      0.789     0.782     0.785       220
+
+    accuracy                          0.942      1621
+   macro avg      0.877     0.874     0.876      1621
+weighted avg      0.942     0.942     0.942      1621

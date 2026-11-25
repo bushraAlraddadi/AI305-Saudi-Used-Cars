@@ -1,0 +1,9 @@
+params,mean_test_score,std_test_score,rank_test_score
+"{'regressor__model__fit_intercept': True, 'regressor__prep__columns__cat__onehot__min_frequency': 1}",-16055.24906022088,1408.3663958750813,1
+"{'regressor__model__fit_intercept': False, 'regressor__prep__columns__cat__onehot__min_frequency': 1}",-16063.820246671128,1405.0571581046995,2
+"{'regressor__model__fit_intercept': True, 'regressor__prep__columns__cat__onehot__min_frequency': 5}",-17534.60542122692,1386.440376990833,3
+"{'regressor__model__fit_intercept': False, 'regressor__prep__columns__cat__onehot__min_frequency': 5}",-17536.79255718607,1386.1169480077392,4
+"{'regressor__model__fit_intercept': False, 'regressor__prep__columns__cat__onehot__min_frequency': 10}",-18266.187203916066,1486.083337333495,5
+"{'regressor__model__fit_intercept': True, 'regressor__prep__columns__cat__onehot__min_frequency': 10}",-18266.187203916088,1486.0833373335154,6
+"{'regressor__model__fit_intercept': False, 'regressor__prep__columns__cat__onehot__min_frequency': 20}",-19152.753875068236,1325.9459160417716,7
+"{'regressor__model__fit_intercept': True, 'regressor__prep__columns__cat__onehot__min_frequency': 20}",-19152.753875068265,1325.9459160417368,8

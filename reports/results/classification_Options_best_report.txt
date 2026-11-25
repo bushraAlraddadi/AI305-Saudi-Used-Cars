@@ -1,0 +1,11 @@
+Best model: Random Forest
+
+              precision    recall  f1-score   support
+
+    Standard      0.652     0.634     0.643       525
+   Semi Full      0.438     0.479     0.457       447
+        Full      0.673     0.643     0.658       642
+
+    accuracy                          0.595      1614
+   macro avg      0.587     0.585     0.586      1614
+weighted avg      0.601     0.595     0.597      1614

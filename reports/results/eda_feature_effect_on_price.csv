@@ -1,0 +1,12 @@
+feature,eta_with_price,median_price_range
+Type,0.768,"6,000 - 772,500"
+Make,0.609,"10,500 - 560,000"
+Year,0.47,(|Spearman|)
+Engine_Size,0.456,(|Spearman|)
+Options,0.336,"45,000 - 82,750"
+Mileage,0.292,(|Spearman|)
+Origin,0.173,"55,000 - 85,000"
+Color,0.164,"15,500 - 85,000"
+Region,0.141,"26,000 - 75,000"
+Gear_Type,0.127,"45,000 - 60,000"
+Fuel_Type,0.059,"58,000 - 140,000"

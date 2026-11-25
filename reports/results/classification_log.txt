@@ -1,0 +1,69 @@
+
+================ TARGET: Gear_Type ================
+Class distribution (train): {'Automatic': 0.864, 'Manual': 0.136}
+Logistic Regression  cv_F1=0.869  test acc=0.936  F1macro=0.855  (4s) {'C': 10, 'class_weight': None}
+Decision Tree        cv_F1=0.851  test acc=0.935  F1macro=0.853  (8s) {'class_weight': None, 'max_depth': 20, 'min_samples_leaf': 10}
+Random Forest        cv_F1=0.889  test acc=0.942  F1macro=0.876  (38s) {'class_weight': 'balanced', 'max_depth': None, 'min_samples_leaf': 1}
+SVM                  cv_F1=0.867  test acc=0.938  F1macro=0.865  (36s) {'C': 10, 'class_weight': None, 'gamma': 'scale'}
+MLP                  cv_F1=0.852  test acc=0.925  F1macro=0.859  (11s) {'alpha': 0.001, 'hidden_layer_sizes': (64,)}
+              model  cv_f1_macro  fit_sec  accuracy  balanced_acc  precision_macro  recall_macro  f1_macro  f1_weighted  train_f1_macro
+Baseline (majority)          NaN      0.0     0.864         0.500            0.432         0.500     0.464        0.801             NaN
+Logistic Regression        0.869      4.0     0.936         0.836            0.878         0.836     0.855        0.934           0.888
+      Decision Tree        0.851      7.8     0.935         0.832            0.878         0.832     0.853        0.933           0.893
+      Random Forest        0.889     37.6     0.942         0.874            0.877         0.874     0.876        0.942           0.996
+                SVM        0.867     36.2     0.938         0.855            0.875         0.855     0.865        0.937           0.976
+                MLP        0.852     10.8     0.925         0.910            0.824         0.910     0.859        0.929           0.883
+Best (by CV macro-F1): Random Forest 
+               precision    recall  f1-score   support
+
+   Automatic      0.966     0.967     0.966      1401
+      Manual      0.789     0.782     0.785       220
+
+    accuracy                          0.942      1621
+   macro avg      0.877     0.874     0.876      1621
+weighted avg      0.942     0.942     0.942      1621
+
+Accuracy on rare car models (<10 in train): 0.901 vs common: 0.948
+Most frequent mistakes (actual -> predicted):
+actual     predicted
+Manual     Automatic    48
+Automatic  Manual       46
+Car models with most mistakes: {'Land Cruiser': 10, 'Hilux': 10, 'Camry': 8, 'Corolla': 4, 'Previa': 3, 'Navara': 3}
+
+================ TARGET: Options ================
+Class distribution (train): {'Full': 0.398, 'Standard': 0.325, 'Semi Full': 0.277}
+Logistic Regression  cv_F1=0.552  test acc=0.568  F1macro=0.555  (7s) {'C': 0.1, 'class_weight': 'balanced'}
+Decision Tree        cv_F1=0.499  test acc=0.542  F1macro=0.520  (7s) {'class_weight': 'balanced', 'max_depth': 10, 'min_samples_leaf': 5}
+/usr/local/lib/python3.13/site-packages/joblib/externals/loky/process_executor.py:787: UserWarning: A worker stopped while some jobs were given to the executor. This can be caused by a too short worker timeout or by a memory leak.
+  warnings.warn(
+Random Forest        cv_F1=0.570  test acc=0.595  F1macro=0.586  (48s) {'class_weight': 'balanced', 'max_depth': 20, 'min_samples_leaf': 1}
+/usr/local/lib/python3.13/site-packages/joblib/externals/loky/process_executor.py:787: UserWarning: A worker stopped while some jobs were given to the executor. This can be caused by a too short worker timeout or by a memory leak.
+  warnings.warn(
+SVM                  cv_F1=0.560  test acc=0.564  F1macro=0.553  (112s) {'C': 1, 'class_weight': 'balanced', 'gamma': 'scale'}
+MLP                  cv_F1=0.554  test acc=0.565  F1macro=0.558  (12s) {'alpha': 0.0001, 'hidden_layer_sizes': (128, 64)}
+              model  cv_f1_macro  fit_sec  accuracy  balanced_acc  precision_macro  recall_macro  f1_macro  f1_weighted  train_f1_macro
+Baseline (majority)          NaN      0.0     0.398         0.333            0.133         0.333     0.190        0.226             NaN
+Logistic Regression        0.552      6.9     0.568         0.556            0.555         0.556     0.555        0.568           0.579
+      Decision Tree        0.499      7.2     0.542         0.521            0.523         0.521     0.520        0.537           0.591
+      Random Forest        0.570     47.8     0.595         0.585            0.587         0.585     0.586        0.597           0.917
+                SVM        0.560    111.7     0.564         0.552            0.555         0.552     0.553        0.567           0.649
+                MLP        0.554     12.2     0.565         0.557            0.561         0.557     0.558        0.570           0.647
+Best (by CV macro-F1): Random Forest 
+               precision    recall  f1-score   support
+
+    Standard      0.652     0.634     0.643       525
+   Semi Full      0.438     0.479     0.457       447
+        Full      0.673     0.643     0.658       642
+
+    accuracy                          0.595      1614
+   macro avg      0.587     0.585     0.586      1614
+weighted avg      0.601     0.595     0.597      1614
+
+Accuracy on rare car models (<10 in train): 0.583 vs common: 0.597
+Most frequent mistakes (actual -> predicted):
+actual     predicted
+Full       Semi Full    144
+Semi Full  Full         140
+Standard   Semi Full    131
+Semi Full  Standard      93
+Car models with most mistakes: {'Camry': 35, 'Yukon': 25, 'Hilux': 22, 'Tahoe': 21, 'Land Cruiser': 21, 'Sonata': 18}

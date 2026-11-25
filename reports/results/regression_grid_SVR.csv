@@ -1,0 +1,21 @@
+params,mean_test_score,std_test_score,rank_test_score
+"{'regressor__model__C': 1, 'regressor__model__epsilon': 0.05, 'regressor__model__gamma': 'scale'}",-13767.645476310747,1065.0135761082304,1
+"{'regressor__model__C': 10, 'regressor__model__epsilon': 0.05, 'regressor__model__gamma': 0.01}",-13853.323503022117,931.0545117057845,2
+"{'regressor__model__C': 1, 'regressor__model__epsilon': 0.1, 'regressor__model__gamma': 'scale'}",-13917.295620426838,1025.4159780749867,3
+"{'regressor__model__C': 10, 'regressor__model__epsilon': 0.1, 'regressor__model__gamma': 0.01}",-13972.677634414791,989.6167041444338,4
+"{'regressor__model__C': 100, 'regressor__model__epsilon': 0.05, 'regressor__model__gamma': 0.01}",-14122.221113222267,1229.1356321524293,5
+"{'regressor__model__C': 100, 'regressor__model__epsilon': 0.1, 'regressor__model__gamma': 0.01}",-14191.441243052313,1294.5162432215172,6
+"{'regressor__model__C': 3, 'regressor__model__epsilon': 0.05, 'regressor__model__gamma': 'scale'}",-14229.246576638874,1102.5171590627583,7
+"{'regressor__model__C': 3, 'regressor__model__epsilon': 0.1, 'regressor__model__gamma': 'scale'}",-14297.657895230635,1074.8057422761003,8
+"{'regressor__model__C': 3, 'regressor__model__epsilon': 0.05, 'regressor__model__gamma': 0.01}",-14721.73278066332,1054.5060491637742,9
+"{'regressor__model__C': 0.3, 'regressor__model__epsilon': 0.05, 'regressor__model__gamma': 'scale'}",-14852.811551769444,1198.4276564634933,10
+"{'regressor__model__C': 3, 'regressor__model__epsilon': 0.1, 'regressor__model__gamma': 0.01}",-14899.642432764394,1086.8386508287845,11
+"{'regressor__model__C': 0.3, 'regressor__model__epsilon': 0.1, 'regressor__model__gamma': 'scale'}",-15079.446559196596,1213.7207499961296,12
+"{'regressor__model__C': 10, 'regressor__model__epsilon': 0.1, 'regressor__model__gamma': 'scale'}",-15156.319541222669,1288.2690287362782,13
+"{'regressor__model__C': 10, 'regressor__model__epsilon': 0.05, 'regressor__model__gamma': 'scale'}",-15411.237000083644,1347.65085564094,14
+"{'regressor__model__C': 1, 'regressor__model__epsilon': 0.05, 'regressor__model__gamma': 0.01}",-16364.29188255662,1325.8269658225927,15
+"{'regressor__model__C': 100, 'regressor__model__epsilon': 0.1, 'regressor__model__gamma': 'scale'}",-16459.02096931918,1395.4158472144547,16
+"{'regressor__model__C': 1, 'regressor__model__epsilon': 0.1, 'regressor__model__gamma': 0.01}",-16470.54488040715,1331.1858320641238,17
+"{'regressor__model__C': 100, 'regressor__model__epsilon': 0.05, 'regressor__model__gamma': 'scale'}",-17076.848042519858,1452.0195303198275,18
+"{'regressor__model__C': 0.3, 'regressor__model__epsilon': 0.05, 'regressor__model__gamma': 0.01}",-19485.67706060822,1735.6981089077601,19
+"{'regressor__model__C': 0.3, 'regressor__model__epsilon': 0.1, 'regressor__model__gamma': 0.01}",-19755.859136942516,1714.7001217492586,20

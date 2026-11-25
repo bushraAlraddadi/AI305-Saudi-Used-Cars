@@ -1,0 +1,95 @@
+Year,Engine_Size,Mileage,Price,Make,Type,Origin,Color,Options,Fuel_Type,Region,actual,predicted
+2002,4.0,20000.0,15000.0,Toyota,Camry,Gulf Arabic,Silver,Semi Full,Gas,Qassim,Automatic,Manual
+2008,1.6,,,Mercury,Grand Marquis,Saudi,White,Semi Full,Gas,Jeddah,Automatic,Manual
+2009,,222000.0,,Toyota,Previa,Saudi,White,Semi Full,Gas,Jubail,Automatic,Manual
+2015,2.4,230000.0,30000.0,Mitsubishi,Outlander,Saudi,White,Standard,Gas,Jeddah,Automatic,Manual
+2020,3.0,102900.0,,Isuzu,D-MAX,Saudi,White,Full,Diesel,Wadi Dawasir,Manual,Automatic
+2003,1.0,479364.0,35000.0,Toyota,Land Cruiser,Gulf Arabic,Another Color,Semi Full,Gas,Riyadh,Automatic,Manual
+2015,,83000.0,45000.0,Nissan,Navara,Saudi,White,Full,Gas,Jeddah,Manual,Automatic
+2013,4.8,300000.0,,Nissan,Land Cruiser Pickup,Gulf Arabic,White,Full,Gas,Tabouk,Automatic,Manual
+2020,2.7,22000.0,120000.0,Toyota,Hilux,Saudi,White,Full,Gas,Al-Ahsa,Automatic,Manual
+2016,,102.0,,Suzuki,Super Carry,Saudi,Yellow,Standard,Gas,Qassim,Manual,Automatic
+2010,1.8,184700.0,11000.0,Chevrolet,Cruze,Saudi,White,Standard,Gas,Riyadh,Manual,Automatic
+2007,2.8,300020.0,15000.0,Nissan,Sunny,Other,Grey,Semi Full,Gas,Abha,Manual,Automatic
+2017,2.7,145000.0,39500.0,Foton,Mini Van,Gulf Arabic,White,Standard,Gas,Riyadh,Manual,Automatic
+2013,1.4,421000.0,,Toyota,Corolla,Saudi,Grey,Standard,Gas,Abha,Manual,Automatic
+2010,,,,Toyota,Aurion,Saudi,White,Standard,Gas,Qassim,Automatic,Manual
+2009,4.8,660000.0,,Nissan,VTC,Saudi,Silver,Semi Full,Gas,Dammam,Automatic,Manual
+2013,,202000.0,23000.0,Chevrolet,Colorado,Saudi,Brown,Standard,Gas,Al-Medina,Manual,Automatic
+2008,1.7,345500.0,,Toyota,Yaris,Saudi,Silver,Standard,Gas,Riyadh,Automatic,Manual
+2010,4.0,169000.0,50000.0,Ford,Mustang,Saudi,Red,Semi Full,Gas,Riyadh,Manual,Automatic
+2009,,390000.0,,Toyota,FJ,Saudi,White,Standard,Gas,Abha,Automatic,Manual
+2015,2.7,94000.0,70000.0,Toyota,Furniture,Saudi,White,Standard,Gas,Jeddah,Manual,Automatic
+1999,4.7,238.0,40000.0,Toyota,Land Cruiser,Saudi,Silver,Full,Gas,Makkah,Manual,Automatic
+2005,1.0,547000.0,19000.0,Honda,Accord,Saudi,White,Semi Full,Gas,Khobar,Manual,Automatic
+2015,,313000.0,,Toyota,Coaster,Saudi,White,Full,Gas,Riyadh,Manual,Automatic
+2006,1.0,350.0,,Lexus,LS,Saudi,Silver,Full,Gas,Riyadh,Manual,Automatic
+2017,,143000.0,155000.0,Mercedes,GLC,Gulf Arabic,White,Full,Gas,Riyadh,Manual,Automatic
+2015,1.6,176277.0,37000.0,Toyota,Corolla,Saudi,Silver,Standard,Gas,Dammam,Automatic,Manual
+2006,3.5,257000.0,15000.0,Kia,Sorento,Saudi,Navy,Full,Gas,Dammam,Manual,Automatic
+2002,6.0,445.0,,Toyota,Land Cruiser,Saudi,White,Full,Gas,Aseer,Manual,Automatic
+2019,,74000.0,180000.0,Toyota,Land Cruiser,Gulf Arabic,White,Full,Gas,Dammam,Manual,Automatic
+2003,,100000.0,,Toyota,Camry,Other,Black,Standard,Gas,Riyadh,Manual,Automatic
+2011,,216000.0,9000.0,Chevrolet,Optra,Saudi,White,Standard,Gas,Riyadh,Automatic,Manual
+2019,2.7,80000.0,120000.0,Toyota,Hilux,Saudi,Another Color,Full,Gas,Riyadh,Automatic,Manual
+2011,6.0,236564.0,37000.0,Nissan,Land Cruiser Pickup,Saudi,White,Semi Full,Gas,Taef,Manual,Automatic
+2006,4.6,283.0,,Toyota,Land Cruiser,Saudi,White,Full,Gas,Aseer,Manual,Automatic
+2017,1.7,119000.0,,Toyota,Hilux,Saudi,White,Full,Gas,Dammam,Automatic,Manual
+2008,,489181.0,,Toyota,Innova,Gulf Arabic,Silver,Full,Gas,Riyadh,Manual,Automatic
+2020,2.7,5236.0,,Toyota,Hilux,Saudi,White,Full,Gas,Jeddah,Automatic,Manual
+2005,,400000.0,,Toyota,Camry,Saudi,White,Standard,Gas,Taef,Automatic,Manual
+2016,2.4,109217.0,,Nissan,Datsun,Saudi,White,Semi Full,Gas,Riyadh,Automatic,Manual
+2012,,95000.0,,GMC,Savana,Saudi,White,Standard,Gas,Arar,Automatic,Manual
+2017,1.6,80000.0,30000.0,Suzuki,APV,Saudi,Yellow,Standard,Gas,Dammam,Manual,Automatic
+2013,2.5,76000.0,,Nissan,Navara,Saudi,White,Semi Full,Gas,Dammam,Automatic,Manual
+2010,1.6,300008.0,,Nissan,Sunny,Saudi,Another Color,Standard,Gas,Makkah,Manual,Automatic
+2014,,208.0,,Toyota,FJ,Gulf Arabic,White,Full,Gas,Al-Baha,Manual,Automatic
+2014,2.0,120000.0,23000.0,Mitsubishi,L300,Saudi,White,Standard,Gas,Riyadh,Manual,Automatic
+2007,1.6,191700.0,13000.0,Hyundai,Elantra,Saudi,Grey,Standard,Gas,Taef,Manual,Automatic
+2016,2.5,89000.0,57000.0,Nissan,Bus Urvan,Saudi,White,Standard,Gas,Dammam,Automatic,Manual
+2012,3.0,290000.0,,Hyundai,Azera,Saudi,White,Semi Full,Gas,Riyadh,Manual,Automatic
+2015,1.6,278000.0,15000.0,Peugeot,301,Saudi,Blue,Semi Full,Gas,Jeddah,Manual,Automatic
+2001,2.7,546473.0,14000.0,Nissan,Pathfinder,Saudi,Silver,Semi Full,Gas,Al-Medina,Automatic,Manual
+2021,2.4,4000.0,158500.0,Toyota,Hilux,Saudi,White,Full,Diesel,Riyadh,Automatic,Manual
+2002,1.0,200.0,,Toyota,Camry,Saudi,Grey,Full,Gas,Jeddah,Manual,Automatic
+2013,,240000.0,,Renault,Fluence,Saudi,White,Full,Gas,Riyadh,Manual,Automatic
+2009,1.8,440000.0,,Nissan,Datsun,Saudi,White,Standard,Gas,Riyadh,Automatic,Manual
+2013,,277000.0,,Toyota,Corolla,Saudi,White,Standard,Gas,Taef,Manual,Automatic
+2012,2.4,190000.0,,Toyota,Previa,Gulf Arabic,Blue,Semi Full,Gas,Makkah,Automatic,Manual
+2013,,28000.0,,Land Rover,Defender,Gulf Arabic,Grey,Semi Full,Diesel,Dammam,Manual,Automatic
+2007,,458.0,,Toyota,Previa,Other,White,Standard,Gas,Riyadh,Automatic,Manual
+2019,2.7,32595.0,105000.0,Toyota,Hilux,Gulf Arabic,White,Full,Gas,Riyadh,Automatic,Manual
+2013,2.7,189.0,35000.0,Nissan,Navara,Saudi,White,Semi Full,Gas,Riyadh,Automatic,Manual
+2016,2.0,172000.0,45000.0,Mazda,6,Other,Black,Semi Full,Gas,Al-Ahsa,Manual,Automatic
+2016,2.7,211000.0,66000.0,Toyota,Hilux,Saudi,White,Semi Full,Gas,Makkah,Automatic,Manual
+1997,,400000.0,,Toyota,Camry,Other,Another Color,Full,Gas,Dammam,Automatic,Manual
+2000,1.6,40000.0,16000.0,Toyota,Camry,Gulf Arabic,White,Standard,Gas,Dammam,Automatic,Manual
+2012,,290000.0,12000.0,Peugeot,308,Saudi,Navy,Standard,Gas,Jubail,Automatic,Manual
+2015,1.5,7000.0,,Ford,Ranger,Other,Black,Full,Gas,Riyadh,Manual,Automatic
+2010,,200000.0,36000.0,Toyota,Furniture,Gulf Arabic,Green,Semi Full,Gas,Makkah,Manual,Automatic
+2010,,342000.0,30000.0,Toyota,Aurion,Saudi,White,Standard,Gas,Jubail,Automatic,Manual
+2014,,201000.0,42000.0,Mazda,6,Other,Black,Full,Gas,Riyadh,Manual,Automatic
+2009,2.0,290000.0,7500.0,Chevrolet,Optra,Saudi,Silver,Semi Full,Gas,Dammam,Manual,Automatic
+2016,4.0,220000.0,130000.0,Toyota,Land Cruiser,Gulf Arabic,White,Full,Gas,Dammam,Manual,Automatic
+2017,1.4,100000.0,69000.0,MINI,Countryman,Other,Grey,Full,Gas,Jeddah,Manual,Automatic
+2006,,,35000.0,Toyota,Prado,Saudi,Silver,Semi Full,Gas,Makkah,Manual,Automatic
+2014,,390861.0,,Toyota,Innova,Saudi,White,Standard,Gas,Dammam,Automatic,Manual
+2009,2.4,520000.0,23000.0,Toyota,Camry,Saudi,White,Full,Gas,Makkah,Automatic,Manual
+2007,,300000.0,28000.0,Ford,Mustang,Saudi,Black,Full,Gas,Jeddah,Manual,Automatic
+2008,1.7,280000.0,17000.0,Toyota,Camry,Saudi,Another Color,Semi Full,Gas,Jeddah,Automatic,Manual
+2009,2.5,280000.0,,Hyundai,Accent,Saudi,Black,Standard,Gas,Qassim,Manual,Automatic
+2009,2.7,335000.0,,Toyota,Furniture,Saudi,Grey,Standard,Gas,Aseer,Manual,Automatic
+2012,2.7,432345.0,,Toyota,Prado,Saudi,White,Semi Full,Gas,Dammam,Automatic,Manual
+2004,,6000.0,,Other,Other,Saudi,White,Full,Diesel,Taef,Automatic,Manual
+2015,,271000.0,,Toyota,Land Cruiser,Saudi,White,Standard,Gas,Riyadh,Manual,Automatic
+2015,1.6,280.0,,Toyota,Corolla,Saudi,White,Standard,Gas,Besha,Manual,Automatic
+2017,1.6,100.0,,Suzuki,Other,Saudi,White,Standard,Gas,Jubail,Automatic,Manual
+2015,4.0,136000.0,140000.0,Toyota,Land Cruiser,Saudi,White,Full,Gas,Riyadh,Manual,Automatic
+2016,2.7,95000.0,85000.0,Toyota,Hilux,Saudi,White,Semi Full,Gas,Jeddah,Automatic,Manual
+2018,2.7,75000.0,,Toyota,Hilux,Saudi,White,Full,Gas,Aseer,Automatic,Manual
+2007,1.2,300000.0,30000.0,Toyota,Land Cruiser,Saudi,White,Standard,Gas,Taef,Automatic,Manual
+2020,,65604.0,,Toyota,Hilux,,White,,Gas,Al-Medina,Automatic,Manual
+2006,4.7,,,Toyota,Land Cruiser,Other,White,Semi Full,Gas,Riyadh,Automatic,Manual
+2015,1.5,53000.0,30000.0,Daihatsu,Gran Max,Saudi,White,Standard,Gas,Jeddah,Automatic,Manual
+2014,,130000.0,,Mercedes,GL,Saudi,Black,Full,Gas,Riyadh,Manual,Automatic
+2019,3.0,86000.0,,Isuzu,D-MAX,Saudi,Another Color,Semi Full,Diesel,Riyadh,Automatic,Manual

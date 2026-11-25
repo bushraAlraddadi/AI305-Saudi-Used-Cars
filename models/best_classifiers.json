@@ -1,0 +1,59 @@
+{
+  "Gear_Type": {
+    "model": "Random Forest",
+    "features": [
+      "Year",
+      "Engine_Size",
+      "Mileage",
+      "Price",
+      "Make",
+      "Type",
+      "Origin",
+      "Color",
+      "Options",
+      "Fuel_Type",
+      "Region"
+    ],
+    "classes": [
+      "Automatic",
+      "Manual"
+    ],
+    "test_metrics": {
+      "accuracy": 0.9420111042566317,
+      "balanced_acc": 0.8744922457984556,
+      "precision_macro": 0.877389211846175,
+      "recall_macro": 0.8744922457984556,
+      "f1_macro": 0.8759322950253714,
+      "f1_weighted": 0.9418993902934343
+    }
+  },
+  "Options": {
+    "model": "Random Forest",
+    "features": [
+      "Year",
+      "Engine_Size",
+      "Mileage",
+      "Price",
+      "Make",
+      "Type",
+      "Origin",
+      "Color",
+      "Fuel_Type",
+      "Gear_Type",
+      "Region"
+    ],
+    "classes": [
+      "Standard",
+      "Semi Full",
+      "Full"
+    ],
+    "test_metrics": {
+      "accuracy": 0.5947955390334573,
+      "balanced_acc": 0.5854450328501636,
+      "precision_macro": 0.5873098844770294,
+      "recall_macro": 0.5854450328501636,
+      "f1_macro": 0.5859218040746703,
+      "f1_weighted": 0.5973385639819471
+    }
+  }
+}

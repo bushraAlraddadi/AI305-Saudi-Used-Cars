@@ -1,0 +1,23 @@
+{
+  "model": "SVR",
+  "features": [
+    "Year",
+    "Engine_Size",
+    "Mileage",
+    "Make",
+    "Type",
+    "Origin",
+    "Color",
+    "Options",
+    "Fuel_Type",
+    "Gear_Type",
+    "Region"
+  ],
+  "test_metrics": {
+    "MAE": 13273.554278545329,
+    "MSE": 899968914.8530036,
+    "RMSE": 29999.481909743103,
+    "R2": 0.8242050254272266,
+    "MAPE_%": 18.03534597423956
+  }
+}

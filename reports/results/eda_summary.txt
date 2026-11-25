@@ -1,0 +1,137 @@
+=== 1. STRUCTURE ===
+Stored as a single CSV table; one row = one used-car ad on syarah.com
+Shape: (8248, 15)
+Link               str
+Make               str
+Type               str
+Year             int64
+Origin             str
+Color              str
+Options            str
+Engine_Size    float64
+Fuel_Type          str
+Gear_Type          str
+Condition          str
+Mileage          int64
+Region             str
+Price              str
+Negotiable        bool
+                                                                                                                                                                      Link      Make     Type  Year Origin   Color    Options  Engine_Size Fuel_Type  Gear_Type Condition  Mileage  Region       Price  Negotiable
+0                                         https://syarah.com/%D9%83%D8%B1%D8%A7%D9%8A%D8%B3%D9%84%D8%B1_C300_%D8%B3%D8%B9%D9%88%D8%AF%D9%8A_2018_%D9%81%D9%84/car-10447460  Chrysler     C300  2018  Saudi   Black       Full          5.7       Gas  Automatic      Used   103000  Riyadh      114000       False
+1  https://syarah.com/%D9%86%D9%8A%D8%B3%D8%A7%D9%86_%D8%A8%D8%A7%D8%AA%D8%B1%D9%88%D9%84_%D8%B1%D8%A8%D8%B9_2016_%D8%B3%D8%B9%D9%88%D8%AF%D9%8A_%D9%81%D9%84/car-10447492    Nissan   Patrol  2016  Saudi   White       Full          4.8       Gas  Automatic      Used     5448  Riyadh  Negotiable        True
+2                                       https://syarah.com/online/%D9%86%D9%8A%D8%B3%D8%A7%D9%86_%D8%B5%D9%86%D9%8A_SV_2019_%D8%B3%D8%AA%D8%A7%D9%86%D8%AF%D8%B1/car-73516    Nissan    Sunny  2019  Saudi  Silver   Standard          1.5       Gas  Automatic      Used    72418  Riyadh       27500       False
+3               https://syarah.com/online/%D9%87%D9%88%D9%86%D8%AF%D8%A7%D9%8A_%D8%A7%D9%84%D9%86%D8%AA%D8%B1%D8%A7_GL_2019_%D8%B3%D8%AA%D8%A7%D9%86%D8%AF%D8%B1/car-73118   Hyundai  Elantra  2019  Saudi    Grey   Standard          1.6       Gas  Automatic      Used   114154  Riyadh       43000       False
+4                          https://syarah.com/online/%D9%87%D9%88%D9%86%D8%AF%D8%A7%D9%8A_%D8%A7%D9%84%D9%86%D8%AA%D8%B1%D8%A7_GL_2019_%D9%86%D8%B5_%D9%81%D9%84/car-73130   Hyundai  Elantra  2019  Saudi  Silver  Semi Full          2.0       Gas  Automatic      Used    41912  Riyadh       59500       False
+
+=== 2. DATA ISSUES (raw) ===
+Missing values per column:
+Link              0
+Make              0
+Type              0
+Year              0
+Origin           95
+Color             0
+Options         109
+Engine_Size    2266
+Fuel_Type         0
+Gear_Type        74
+Condition         0
+Mileage           0
+Region            0
+Price             0
+Negotiable        0
+Condition values: {'Used': 8248} -> constant, dropped
+Link unique: 8228 of 8248 -> identifier, dropped
+Price stored as text; 'Negotiable' (no price) rows: 2596 (31.5%) -> set to 0
+Negotiable flag vs missing price:
+Price       False  True 
+Negotiable              
+False        5652      0
+True            0   2596
+Exact duplicates incl. Link: 20 | duplicates ignoring Link: 69
+Rows after dropping duplicates: 8179
+Implausible prices 0 < Price < 5000: 96
+            Make     Type  Year  Mileage  Price
+8167         GMC    Yukon  2019    50000      1
+7115     Genesis      G80  2018   170000    500
+7761      Toyota    Yaris  2018   100000    850
+2226  Mitsubishi  Attrage  2019    41000    877
+3707         Kia      Rio  2019    55500    884
+7358      Toyota    Yaris  2019    85000    950
+1696          MG        5  2020    41000    988
+7801     Hyundai  Elantra  2019    89000    993
+3067         GMC    Yukon  2021     4000   1000
+4348      Toyota  Corolla  2020    48563   1002
+Implausible mileage > 1,000,000 km: 44 | top values: [4500000, 4691232, 4900000, 9999999, 20000000]
+Very old cars (Year < 1980): 17 -> rare but plausible (classic cars), kept
+Engine_Size missing: 2254 -> imputed with the median of the same model (fitted on train only)
+
+=== 3. DESCRIPTIVE STATISTICS ===
+              count       mean        std     min      25%       50%       75%         max   skew  missing
+Year         8179.0    2014.01       5.94  1936.0   2012.0    2016.0    2018.0      2022.0  -2.62        0
+Engine_Size  5925.0       3.18       1.57     1.0      2.0       2.7       4.0         9.0   0.95     2254
+Mileage      8179.0  149386.36  345109.48   100.0  37000.0  102000.0  196000.0  20000000.0  29.86        0
+Price        8179.0   53661.12   72885.67     0.0      0.0   36500.0   73000.0   1150000.0   3.57        0
+Price (only priced ads, Price >= 5000):
+count       5497.0
+mean       79811.0
+std        76282.0
+min         5000.0
+25%        36000.0
+50%        58000.0
+75%        95000.0
+max      1150000.0
+   feature  n_unique  missing          top  top_share  imbalance_ratio_max_min
+      Make        65        0       Toyota      0.251                   2056.0
+      Type       435        0 Land Cruiser      0.045                    372.0
+    Origin         3       95        Saudi      0.739                     63.6
+     Color        15        0        White      0.433                    354.2
+   Options         3      109         Full      0.392                     29.4
+ Fuel_Type         3        0          Gas      0.976                    332.6
+ Gear_Type         2       74    Automatic      0.856                     94.7
+    Region        27        0       Riyadh      0.401                    547.2
+Negotiable         2        0        False      0.684                      2.2
+Origin: {'Saudi': 6043, 'Other': 1028, 'Gulf Arabic': 1013, nan: 95}
+Options: {'Full': 3210, 'Standard': 2624, 'Semi Full': 2236, nan: 109}
+Fuel_Type: {'Gas': 7982, 'Diesel': 173, 'Hybrid': 24}
+Gear_Type: {'Automatic': 7005, 'Manual': 1100, nan: 74}
+Color: {'White': 3542, 'Black': 954, 'Silver': 904, 'Grey': 724, 'Another Color': 544, 'Brown': 328, 'Red': 283, 'Blue': 229, 'Golden': 228, 'Navy': 164, 'Bronze': 163, 'Oily': 52, 'Green': 39, 'Yellow': 15, 'Orange': 10}
+
+=== 4. CORRELATION WITH PRICE (priced ads, plausible values) ===
+             pearson  spearman
+Year           0.319     0.470
+Engine_Size    0.341     0.456
+Mileage       -0.282    -0.292
+
+=== 5. EFFECT OF EACH FEATURE ON PRICE ===
+    feature  eta_with_price median_price_range
+       Type           0.768    6,000 - 772,500
+       Make           0.609   10,500 - 560,000
+       Year           0.470       (|Spearman|)
+Engine_Size           0.456       (|Spearman|)
+    Options           0.336    45,000 - 82,750
+    Mileage           0.292       (|Spearman|)
+     Origin           0.173    55,000 - 85,000
+      Color           0.164    15,500 - 85,000
+     Region           0.141    26,000 - 75,000
+  Gear_Type           0.127    45,000 - 60,000
+  Fuel_Type           0.059   58,000 - 140,000
+Median price by Options: {'Full': 82750.0, 'Semi Full': 57000.0, 'Standard': 45000.0}
+Median price by Gear_Type: {'Automatic': 60000.0, 'Manual': 45000.0}
+Median price by Origin: {'Gulf Arabic': 85000.0, 'Other': 65000.0, 'Saudi': 55000.0}
+
+=== 6. WHICH FEATURES SEPARATE EACH CATEGORICAL TARGET ===
+Cramer's V for categorical inputs, correlation ratio (eta) for numeric inputs. 0=no relation, 1=perfect.
+      Make: Type=0.95, Price=0.61, Engine_Size=0.55, Gear_Type=0.45
+    Origin: Type=0.32, Make=0.24, Year=0.19, Price=0.17
+     Color: Type=0.24, Gear_Type=0.23, Year=0.23, Engine_Size=0.18
+   Options: Type=0.40, Price=0.34, Engine_Size=0.30, Make=0.28
+ Fuel_Type: Type=0.50, Make=0.39, Gear_Type=0.19, Region=0.11
+ Gear_Type: Type=0.75, Make=0.45, Year=0.24, Color=0.23
+    Region: Year=0.21, Gear_Type=0.18, Price=0.14, Engine_Size=0.14
+Negotiable: Region=0.22, Type=0.20, Year=0.19, Make=0.12
+
+=== 7. TRAIN/TEST SPLIT ===
+80/20 split with random_state=42, stratified by the target for classification.
+The split is done right after row-level cleaning and BEFORE any imputer/scaler/encoder is fitted;
+all fitted preprocessing lives in sklearn Pipelines (see train_*.py).

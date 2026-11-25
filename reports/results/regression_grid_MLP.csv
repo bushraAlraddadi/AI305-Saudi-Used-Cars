@@ -1,0 +1,19 @@
+params,mean_test_score,std_test_score,rank_test_score
+"{'regressor__model__alpha': 0.01, 'regressor__model__hidden_layer_sizes': (64,), 'regressor__model__learning_rate_init': 0.001}",-15560.152098725792,1474.1608959589562,1
+"{'regressor__model__alpha': 0.01, 'regressor__model__hidden_layer_sizes': (128, 64), 'regressor__model__learning_rate_init': 0.001}",-15628.071277876064,1077.9635252448977,2
+"{'regressor__model__alpha': 0.001, 'regressor__model__hidden_layer_sizes': (64,), 'regressor__model__learning_rate_init': 0.001}",-15674.108439152269,1578.0376900632423,3
+"{'regressor__model__alpha': 0.0001, 'regressor__model__hidden_layer_sizes': (64,), 'regressor__model__learning_rate_init': 0.001}",-15713.669422803228,1518.6214518194697,4
+"{'regressor__model__alpha': 0.01, 'regressor__model__hidden_layer_sizes': (64, 32), 'regressor__model__learning_rate_init': 0.001}",-15721.508914961698,1253.0366196839611,5
+"{'regressor__model__alpha': 0.0001, 'regressor__model__hidden_layer_sizes': (64,), 'regressor__model__learning_rate_init': 0.005}",-15776.076536907192,928.7439067867084,6
+"{'regressor__model__alpha': 0.0001, 'regressor__model__hidden_layer_sizes': (128, 64), 'regressor__model__learning_rate_init': 0.001}",-15798.763853255756,1212.8794260357736,7
+"{'regressor__model__alpha': 0.001, 'regressor__model__hidden_layer_sizes': (64, 32), 'regressor__model__learning_rate_init': 0.001}",-15802.702280923395,1256.352428522116,8
+"{'regressor__model__alpha': 0.0001, 'regressor__model__hidden_layer_sizes': (64, 32), 'regressor__model__learning_rate_init': 0.001}",-15834.81216769067,1218.7720068449269,9
+"{'regressor__model__alpha': 0.001, 'regressor__model__hidden_layer_sizes': (128, 64), 'regressor__model__learning_rate_init': 0.001}",-15848.324764472101,1250.656025178129,10
+"{'regressor__model__alpha': 0.001, 'regressor__model__hidden_layer_sizes': (64,), 'regressor__model__learning_rate_init': 0.005}",-15857.303364063986,1053.6209801464122,11
+"{'regressor__model__alpha': 0.01, 'regressor__model__hidden_layer_sizes': (64,), 'regressor__model__learning_rate_init': 0.005}",-15874.318004766066,1005.1918021734123,12
+"{'regressor__model__alpha': 0.01, 'regressor__model__hidden_layer_sizes': (128, 64), 'regressor__model__learning_rate_init': 0.005}",-16056.486891928998,1334.977057319838,13
+"{'regressor__model__alpha': 0.001, 'regressor__model__hidden_layer_sizes': (128, 64), 'regressor__model__learning_rate_init': 0.005}",-16148.17079759739,1211.4271200973312,14
+"{'regressor__model__alpha': 0.0001, 'regressor__model__hidden_layer_sizes': (128, 64), 'regressor__model__learning_rate_init': 0.005}",-16177.818740457273,1377.3362604509732,15
+"{'regressor__model__alpha': 0.01, 'regressor__model__hidden_layer_sizes': (64, 32), 'regressor__model__learning_rate_init': 0.005}",-16389.10211864704,1492.0799039401782,16
+"{'regressor__model__alpha': 0.001, 'regressor__model__hidden_layer_sizes': (64, 32), 'regressor__model__learning_rate_init': 0.005}",-16491.270146715404,1510.6089776867393,17
+"{'regressor__model__alpha': 0.0001, 'regressor__model__hidden_layer_sizes': (64, 32), 'regressor__model__learning_rate_init': 0.005}",-16522.226607720215,1514.9635892958938,18

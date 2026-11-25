@@ -1,0 +1,43 @@
+Rows: 8179 -> removed 2586 with Price=0 and 96 with Price<5000 -> 5497
+Train/test: (4397, 11) (1100, 11)
+Linear Regression  cv_MAE=    16055  test MAE=    14799  RMSE=    31532  R2=0.806  (4s)  {'fit_intercept': True, 'prep__columns__cat__onehot__min_frequency': 1}
+Decision Tree      cv_MAE=    21982  test MAE=    19813  RMSE=    37951  R2=0.719  (3s)  {'max_depth': 15, 'min_samples_leaf': 3}
+Random Forest      cv_MAE=    15800  test MAE=    14965  RMSE=    33116  R2=0.786  (150s)  {'max_depth': None, 'max_features': 0.3, 'min_samples_leaf': 1}
+SVR                cv_MAE=    13768  test MAE=    13274  RMSE=    29999  R2=0.824  (82s)  {'C': 1, 'epsilon': 0.05, 'gamma': 'scale'}
+MLP                cv_MAE=    15560  test MAE=    15367  RMSE=    34459  R2=0.768  (59s)  {'alpha': 0.01, 'hidden_layer_sizes': (64,), 'learning_rate_init': 0.001}
+            model    cv_MAE  fit_sec       MAE          MSE      RMSE     R2  MAPE_%  train_R2
+Baseline (median)       NaN      0.0 43420.637 5.486672e+09 74072.072 -0.072  75.359       NaN
+Linear Regression 16055.249      3.5 14799.259 9.942401e+08 31531.573  0.806  21.100     0.860
+    Decision Tree 21981.543      3.3 19812.920 1.440276e+09 37950.968  0.719  29.535     0.884
+    Random Forest 15800.464    149.5 14964.601 1.096648e+09 33115.679  0.786  20.971     0.944
+              SVR 13767.645     82.1 13273.554 8.999689e+08 29999.482  0.824  18.035     0.881
+              MLP 15560.152     58.6 15367.036 1.187434e+09 34459.160  0.768  20.567     0.785
+Best (by CV MAE): SVR
+
+Error by price band:
+               n      MAE  median_pct_error
+price_band                                
+<30k        215   4833.7              16.6
+30-60k      381   7294.0              11.3
+60-100k     262  11270.6              11.4
+100-200k    178  20238.8               9.2
+>200k        64  66050.5              15.5
+
+Error by how often the car model appears in training:
+                n      MAE  median_pct_error
+type_bucket                                
+<10 (rare)   189  23963.9              22.3
+10-30        236  11082.7              12.4
+31-100       375  13745.8              11.3
+>100         300   7671.8               8.7
+
+Worst 8 predictions:
+              Make         Type  Year   Mileage  Actual  Predicted  PctError
+2722  Rolls-Royce     Camargue  1990    5000.0  500000    46877.0      91.0
+339         Lexus           LX  2020  455000.0  455000   139025.0      69.0
+787       Bentley     Bentayga  2018   26000.0  750000   463902.0      38.0
+254         Lexus           LX  2018  105000.0  355000   160576.0      55.0
+308   Rolls-Royce        Ghost  2010  175000.0  310000   117110.0      62.0
+4713   Land Rover     Defender  2021     100.0  450000   264951.0      41.0
+3429          BMW            X  2020    2300.0  465000   293319.0      37.0
+2439   Land Rover  Range Rover  2020   17000.0  428000   263566.0      38.0

@@ -1,0 +1,9 @@
+params,mean_test_score,std_test_score,rank_test_score
+"{'model__C': 10, 'model__class_weight': None}",0.8685237706134361,0.01793950643104337,1
+"{'model__C': 1, 'model__class_weight': None}",0.8631934654294833,0.017049638820253666,2
+"{'model__C': 10, 'model__class_weight': 'balanced'}",0.8431774912662304,0.005663838155269645,3
+"{'model__C': 1, 'model__class_weight': 'balanced'}",0.8412499726952098,0.008499652285864105,4
+"{'model__C': 0.1, 'model__class_weight': None}",0.8186451754314114,0.017805693179649567,5
+"{'model__C': 0.1, 'model__class_weight': 'balanced'}",0.8132158587360889,0.01225502241370165,6
+"{'model__C': 0.01, 'model__class_weight': 'balanced'}",0.7477498641937258,0.011128462274752157,7
+"{'model__C': 0.01, 'model__class_weight': None}",0.615919221236535,0.009662113463524108,8

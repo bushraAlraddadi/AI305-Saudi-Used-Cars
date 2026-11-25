@@ -1,0 +1,10 @@
+feature,n_unique,missing,top,top_share,imbalance_ratio_max_min
+Make,65,0,Toyota,0.251,2056.0
+Type,435,0,Land Cruiser,0.045,372.0
+Origin,3,95,Saudi,0.739,63.6
+Color,15,0,White,0.433,354.2
+Options,3,109,Full,0.392,29.4
+Fuel_Type,3,0,Gas,0.976,332.6
+Gear_Type,2,74,Automatic,0.856,94.7
+Region,27,0,Riyadh,0.401,547.2
+Negotiable,2,0,False,0.684,2.2
